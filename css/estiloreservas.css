@@ -1,0 +1,17 @@
+.campos{
+    color:blue;
+    
+}
+.img1{
+   
+    border-radius: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.507);
+    margin: auto;
+    display: block;
+    text-align: center;
+ }
+
+ .formulario{
+    height: 100px;
+    
+ }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Cliente - Hotel Paradise</title>
+  <link rel="stylesheet" type="text/css" href="css/formularioempleado.css">
+ 
+  
+</head>
+<body background="imagenes/cliente.jpg">
+  <div class="container">
+    <h1>Registro de Clientes</h1>
+    <form action="procesar_registro.php" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Registrarse">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.img1{
+    
+    width: 100%;
+    height: 250px;
+    border-radius: 40px;
+    margin: auto;
+ }
+ .boton{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(30deg, #ff8000,#434343); /*Color del marco */
+    color: black; /*color de la palabra */
+    text-decoration: none; /*Quitae el subrayado */
+    padding: 15px 20px; /*acomodar */
+    display: block; /*darle un espaciado */
+    font-weight: bold;
+}

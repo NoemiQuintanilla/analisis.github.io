@@ -1,0 +1,161 @@
+.texto_tabla    
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(0, 0, 0)
+}
+
+.texto_inicio
+{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    background-color: rgba(245, 94, 220, 0.664);
+    padding: 5px;
+    border: 3px solid rgba(2, 2, 2, 0.212);
+    border-radius: 10px;
+    color: rgb(39, 1, 1);
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.img1{
+    width: 100%;
+    height: 250px;
+    box-shadow: -25px 25px 10px rgba(3, 3, 3, 0.842); 
+    border-radius: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.507);
+    margin: auto;
+    display: block;
+    text-align: center;
+ }
+ .registro{
+    background-color:hsla(0, 100%, 99%, 0.5);
+    width: 100%;
+    max-width: 250px;
+    padding:10px;
+    margin-bottom: 20px;
+    
+}
+.registro h3{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color:#1a2537;
+
+}
+
+ .registro1{
+    width: 90%;
+    max-width: 350px;
+   
+    background-color: #fff;
+    padding:10px;
+   
+    margin-bottom: 20px;
+}
+
+.forma{
+    padding-bottom:30px ;
+}
+
+.registro h1{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    padding-bottom: 20px;
+
+    margin-top: 10px;
+    
+    color: #1a2537;
+}
+.registro .entrada{
+    margin-bottom: 23px;
+    border:1px solid #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    border-radius:10px;
+    
+}
+.registro .entrada input{
+    font-size: 17px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    
+}
+.registro  .recordar{
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    margin-top: -10px;
+    font-size: 15px;
+    
+
+    font-family: "rubick";
+    color: rgb(66, 66, 64);
+    
+   
+   
+}
+.registro  .olvidar{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #13315f;
+}
+.registro .olvidar:hover{
+    color: rgb(61, 94, 201);
+    
+}
+
+
+.registro p .enlace:hover{
+    color: cadetblue;
+}
+.registro .boton{
+    background-color: #1b417a;
+    color: #fff;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+     
+}
+.registro .boton:hover{
+    background-color: rgba(12, 128, 163, 0.932);
+}
+.registro .entrada .icono{
+    width: 23px;
+    text-align: center;
+    color: #999;
+    padding-left: 10px;
+}
+
+.botonSesion{
+    text-align:center;
+
+}
+
+.texto_tabla1{
+    background: linear-gradient(30deg, #43e97b,#434343); /*Color del marco */
+    color: black; /*color de la palabra */
+    text-decoration: none; /*Quitae el subrayado */
+    padding: 15px 20px; /*acomodar */
+    display: block; /*darle un espaciado */
+}
+
