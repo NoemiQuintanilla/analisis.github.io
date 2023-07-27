@@ -7,6 +7,73 @@
     <title>Hotel Rayito de Sol</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/estilocontactanos.css">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+    
+        }
+    
+        body {
+            background-image: url('https://st4.depositphotos.com/9813558/19784/i/600/depositphotos_197846892-stock-photo-latacunga-ecuador-may-2018-built.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <style>
+        /* Estilo para ocultar la viñeta de la lista */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        /* Estilo para el contenedor del cuadro */
+        .rating-container {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+    
+        /* Estilo para las estrellas */
+        .star-rating {
+            display: inline-block;
+            font-size: 0;
+            /* Para eliminar el espacio entre los elementos */
+        }
+    
+        /* Estilo para la estrella vacía */
+        .star-rating input {
+            display: none;
+            /* Ocultamos el input real */
+        }
+    
+        /* Estilo para la estrella llena */
+        .star-rating label {
+            font-size: 30px;
+            /* Tamaño de la estrella */
+            padding: 0 2px;
+            /* Espaciado entre estrellas */
+            cursor: pointer;
+            /* Cambiar el cursor a una mano al pasar por encima */
+        }
+    
+        /* Estilo para mostrar estrellas vacías */
+        .star-rating label::before {
+            content: '\2606';
+            /* Estrella vacía con unicode */
+        }
+    
+        /* Estilo para mostrar estrellas llenas cuando el input está marcado */
+        .star-rating input:checked~label::before {
+            content: '\2605';
+            /* Estrella llena con unicode */
+        }
+    </style>
     
 </head>
 <body>
@@ -14,7 +81,7 @@
     <header class="site-header">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="">
+                <a href="index.html">
                     <img src="imagenes/logo.jpg"  alt="Logotipo de Hotel Rayito de Sol">
                 </a>
 
@@ -24,6 +91,49 @@
                 </nav>
             </div>
         </div> <!-- contenedor -->
+        <style>
+            /* Estilo para ocultar la viñeta de la lista */
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+        
+            /* Estilo para las estrellas */
+            .star-rating {
+                display: inline-block;
+                font-size: 0;
+                /* Para eliminar el espacio entre los elementos */
+            }
+        
+            /* Estilo para la estrella vacía */
+            .star-rating input {
+                display: none;
+                /* Ocultamos el input real */
+            }
+        
+            /* Estilo para la estrella llena */
+            .star-rating label {
+                font-size: 30px;
+                /* Tamaño de la estrella */
+                padding: 0 2px;
+                /* Espaciado entre estrellas */
+                cursor: pointer;
+                /* Cambiar el cursor a una mano al pasar por encima */
+            }
+        
+            /* Estilo para mostrar estrellas vacías */
+            .star-rating label::before {
+                content: '\2606';
+                /* Estrella vacía con unicode */
+            }
+        
+            /* Estilo para mostrar estrellas llenas cuando el input está marcado */
+            .star-rating input:checked~label::before {
+                content: '\2605';
+                /* Estrella llena con unicode */
+            }
+        </style>
     </header>
 
     <h1 class="fw-300 centrar-texto">Contacto</h1>
@@ -90,6 +200,30 @@
 
         </form>
     </main>
+    <h1>Calificación con Estrellas</h1>
+    <p>Califica este producto:</p>
+    <ul class="star-rating">
+        <li>
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5"></label>
+        </li>
+        <li>
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4"></label>
+        </li>
+        <li>
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3"></label>
+        </li>
+        <li>
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2"></label>
+        </li>
+        <li>
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1"></label>
+        </li>
+    </ul>
 
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
