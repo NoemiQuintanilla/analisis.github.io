@@ -1,84 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESERVAS</title>
     <link rel="stylesheet" type="text/css" href="css/estiloreservas.css">
     <style>
-            body{
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                
-            }
-            body{
-                background-image: url('https://st4.depositphotos.com/9813558/19784/i/600/depositphotos_197846892-stock-photo-latacunga-ecuador-may-2018-built.jpg');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        </style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://st4.depositphotos.com/9813558/19784/i/600/depositphotos_197846892-stock-photo-latacunga-ecuador-may-2018-built.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Estilos para la barra de navegación */
+        header {
+            background-color: #333;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        header nav {
+            display: flex;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Estilos para el formulario de reservas */
+        table {
+            margin: 30px auto;
+        }
+
+        table td {
+            padding: 10px;
+        }
+
+        table .formulario {
+            background-color: #fff;
+        }
+
+        table select {
+            width: 100%;
+        }
+
+        table .form-group {
+            padding-top: 20px;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .barra-pie {
+            display: flex;
+            flex: 1;
+            /* Agregamos flex: 1 para que la barra se expanda y empuje el contenido a los extremos */
+            justify-content: space-between;
+            /* Ajustamos el contenido a los extremos */
+        }
+
+        footer .barra-pie div {
+            margin-right: 20px;
+        }
+    </style>
 </head>
-<body background="imagenes/fondo_hotel.webp">
-    <a href="index.html">
+
+<body>
+    <header>
         <img src="imagenes/logo.jpg" alt="Logotipo de Hotel Rayito de Sol">
-    </a>
-    <tr>
-        <td colspan="8"><center><img src="imagenes/reservas.webp" width="100%" height="400px"></center>
-        </td> 
-    </tr>
-    <table align="center" border="1" width="60%"  bgcolor="	#fff" >
-        
-            <tr>
-                <td colspan="5" align="center" bgcolor="	#FF6347" >
-                    <h1>Formulario de Reservas</h1>
-                </td>
-                
-            </tr>
-
-            <tr class="formulario">
-                <td align="center">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </td>
-            </tr>
-           
-
-            <tr class="formulario">
-                <td align="center">
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" required>
-                </td>
-            </tr>
-        
-
-            <tr class="formulario">
-                <td align="center">
-                    <label for="fecha">Fecha de reserva:</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </td>
-            </tr>
-
-            <tr class="formulario">
-                <td align="center">
-                    <label for="habitacion">Tipo de habitación:</label>
-                    <select id="habitacion" name="habitacion" required>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Contactanos</a>
+        </nav>
+    </header>
+    <table align="center" border="1" width="60%" bgcolor="#FFFFFF">
+        <tr>
+            <td colspan="5" align="center" bgcolor="#FF6347">
+                <h1>Formulario de Reservas</h1>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <td align="center">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <td align="center">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <td align="center">
+                <label for="fecha">Fecha de reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <td align="center">
+                <label for="habitacion">Tipo de habitación:</label>
+                <select id="habitacion" name="habitacion" required>
                     <option value="individual">Individual</option>
                     <option value="doble">Doble</option>
                     <option value="suite">Suite</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="form-group" align="center">
-                    <a href="visualizacionreservas.html"><button  type="submit" value="Registrarse">Aceptar</button></a>
-                </td>
-                
-            </tr>    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="form-group" align="center">
+                <a href="visualizacionreservas.html"><button type="submit" value="Registrarse">Aceptar</button></a>
+            </td>
+        </tr>
     </table>
-    
-
+    <footer>
+        <div class="barra-pie">
+            <div>Todos los derechos reservados &copy;</div>
+            <div>Elaborado por: [Nombre]</div>
+        </div>
+    </footer>
 </body>
+
 </html>

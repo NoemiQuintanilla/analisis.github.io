@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hotel Rayito de Sol</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/estilocontactanos.css">
@@ -12,136 +11,149 @@
             height: 100%;
             margin: 0;
             padding: 0;
-    
-        }
-    
-        body {
+            min-height: 100vh;
             background-image: url('https://st4.depositphotos.com/9813558/19784/i/600/depositphotos_197846892-stock-photo-latacunga-ecuador-may-2018-built.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
-    </style>
-    <style>
-        /* Estilo para ocultar la viñeta de la lista */
+
+        /* Estilos para ocultar la viñeta de la lista */
         ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-    
-        /* Estilo para el contenedor del cuadro */
-        .rating-container {
-            display: inline-block;
-            border: 1px solid #ccc;
-            padding: 5px;
-            border-radius: 5px;
-            font-family: Arial, sans-serif;
+
+        /* Estilos para el header (barra de navegación) */
+        .site-header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
         }
-    
-        /* Estilo para las estrellas */
+
+        .site-header .contenedor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-header .logo {
+            max-width: 150px;
+        }
+
+        .site-header .navegacion {
+            display: flex;
+        }
+
+        .site-header .navegacion a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Estilos para el contenido principal */
+        .contenido-centrado {
+            margin: 30px auto;
+            max-width: 90%;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contenido-centrado .fw-300 {
+            font-weight: 300;
+        }
+
+        .contenido-centrado .centrar-texto {
+            text-align: center;
+        }
+
+        /* Estilos para el formulario de contacto */
+        .contacto {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+
+        .contacto label, .contacto input, .contacto select, .contacto textarea {
+            margin: 10px;
+        }
+
+        /* Estilos para las estrellas de calificación */
         .star-rating {
             display: inline-block;
             font-size: 0;
-            /* Para eliminar el espacio entre los elementos */
+            margin-bottom: 20px;
         }
-    
-        /* Estilo para la estrella vacía */
+
         .star-rating input {
             display: none;
-            /* Ocultamos el input real */
         }
-    
-        /* Estilo para la estrella llena */
+
         .star-rating label {
             font-size: 30px;
-            /* Tamaño de la estrella */
             padding: 0 2px;
-            /* Espaciado entre estrellas */
             cursor: pointer;
-            /* Cambiar el cursor a una mano al pasar por encima */
         }
-    
-        /* Estilo para mostrar estrellas vacías */
+
         .star-rating label::before {
             content: '\2606';
-            /* Estrella vacía con unicode */
         }
-    
-        /* Estilo para mostrar estrellas llenas cuando el input está marcado */
-        .star-rating input:checked~label::before {
+
+        .star-rating input:checked ~ label::before {
             content: '\2605';
-            /* Estrella llena con unicode */
+        }
+
+        /* Estilos para el footer */
+        .site-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .site-footer .contenedor-footer {
+            /* Estilos del contenedor del footer aquí */
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
-    
 </head>
 <body>
 
     <header class="site-header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
+        <div class="contenedor-header">
+            <div class="logo">
                 <a href="index.html">
-                    <img src="imagenes/logo.jpg"  alt="Logotipo de Hotel Rayito de Sol">
+                    <img src="imagenes/logo.jpg" alt="Logotipo de Hotel Rayito de Sol">
                 </a>
-
-                <nav id="navegacion" class="navegacion">
-                    <a href="index.html">Nosotros</a>
-                    <a href="contactanos.html">Contacto</a>
-                </nav>
             </div>
-        </div> <!-- contenedor -->
-        <style>
-            /* Estilo para ocultar la viñeta de la lista */
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-        
-            /* Estilo para las estrellas */
-            .star-rating {
-                display: inline-block;
-                font-size: 0;
-                /* Para eliminar el espacio entre los elementos */
-            }
-        
-            /* Estilo para la estrella vacía */
-            .star-rating input {
-                display: none;
-                /* Ocultamos el input real */
-            }
-        
-            /* Estilo para la estrella llena */
-            .star-rating label {
-                font-size: 30px;
-                /* Tamaño de la estrella */
-                padding: 0 2px;
-                /* Espaciado entre estrellas */
-                cursor: pointer;
-                /* Cambiar el cursor a una mano al pasar por encima */
-            }
-        
-            /* Estilo para mostrar estrellas vacías */
-            .star-rating label::before {
-                content: '\2606';
-                /* Estrella vacía con unicode */
-            }
-        
-            /* Estilo para mostrar estrellas llenas cuando el input está marcado */
-            .star-rating input:checked~label::before {
-                content: '\2605';
-                /* Estrella llena con unicode */
-            }
-        </style>
+
+            <nav class="navegacion">
+                <a href="index.html">Nosotros</a>
+                <a href="contactanos.html">Contacto</a>
+            </nav>
+        </div>
     </header>
+    
 
     <h1 class="fw-300 centrar-texto">Contacto</h1>
     <img src="imagenes/logo.jpg" id="imagenlogo" alt="Imagen Principal">
 
     <main class="contenedor seccion contenido-centrado">
-        <h2 class="fw-300 centrar-texto">Llena el formulario de Contacto</h2>
-
+        <h2 class="fw-300 centrar-texto"><b>Llena el formulario de Contacto</b></h2>
+        <!-- Resto del contenido del formulario de contacto -->
         <form class="contacto" action="">
             <fieldset>
                 <legend>Información Personal</legend>
@@ -200,8 +212,8 @@
 
         </form>
     </main>
-    <h1>Calificación con Estrellas</h1>
-    <p>Califica este producto:</p>
+<h1>Calificación con Estrellas</h1>
+    <p>Califica nuestra página:</p>
     <ul class="star-rating">
         <li>
             <input type="radio" name="rating" id="star5" value="5">
@@ -226,8 +238,8 @@
     </ul>
 
     <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <p class="copyright">Todos los Derechos Reservados 2023 &copy; </p>
+        <div class="contenedor-footer">
+            <p>Todos los Derechos Reservados 2023 &copy;</p>
             <p>Elaborado por: Lenin Flores, Michael Llumiugsi, Alison Marcalla, Narcisa Quintanilla</p>
         </div>
     </footer>
